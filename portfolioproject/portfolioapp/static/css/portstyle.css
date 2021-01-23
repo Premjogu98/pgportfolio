@@ -1,0 +1,328 @@
+
+#TopNavBar{
+    position:sticky;
+    top:0;
+    background: transparent;
+    Color: White;
+    width:100%;
+    height:94px;
+    z-index: 1000;
+    /* max-width: 120%; */
+    
+}
+.top-nav-list{
+    text-align: center;
+    background-image: linear-gradient(to right, #0037ff , #ff00eb);
+    border-radius: 130px;
+}
+ 
+  #TopNavBar ul{
+    list-style-type:none;
+    padding:0;
+  }
+  #TopNavBar ul a{
+    color:white;
+  }
+  #TopNavBar ul li{
+    display:inline-block;
+    /* width:100px; */
+    margin: 17px 0px 0px 38px;
+    /* font-weight: 600; */
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+
+  }
+#main-logo{
+    margin-left: 25px;
+    font-size: 37px;
+    cursor: pointer;
+    Color:black;
+    font-weight: 700;
+}
+.main-logo{
+    font-size: 37px;
+    cursor: pointer;
+    Color:rgb(0, 126, 255);
+    font-weight: 700;
+}
+.intro-d{
+  position: absolute;
+  /* top: 180px; */
+  padding: 112px;
+
+}
+.intro-1{
+  font-weight: 100;
+  color:black;
+  padding-left: 35px;
+}
+.intro-name{
+  font-weight: bolder;
+  color:black;
+  padding-left: 35px;
+}
+.typewriter {
+  font-family: sans-serif;
+  color: black;
+  padding-left: 35px;
+  display: block;
+}
+.typewriter-text {
+  padding-right: 10px;
+  color: #ffe509;
+  border-right: solid #ffe509 7px;
+  /* text-transform: uppercase; */
+  animation: cursor 1s ease-in-out infinite;
+  font-weight: bold;
+}
+@keyframes cursor {
+  from { border-color: #ffe509; }
+  to { border-color: transparent; }
+}
+
+@media (max-width: 767.98px) {
+  .typewriter { font-size: 35px; }
+}
+@media (min-width: 768px) {
+  .typewriter { font-size: 34px; }
+}
+.intro-about-me{
+  position: absolute;
+  top: 800px;
+  max-width: 100%;
+  background-color: white;
+}
+.hireme{
+  padding-left: 35px;
+}
+.hireme button{
+  border-radius: 5px;
+    border: 2px solid rgb(0, 126, 255);
+    background: transparent;
+    color: black;
+    font-size: 23px;
+    padding: 4px;
+    width: 215px;
+    cursor: pointer;
+    height: 51px;
+  transition: .5s ease;
+}
+
+.myspecial .lbl1{
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(233, 5, 68);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: serif;
+    border-bottom: 2px solid rgb(233, 5, 68);
+}
+.myspecial .lbl2{
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: serif;
+  border-bottom: 2px solid rgb(233, 5, 68);
+}
+.myspecial-sub{
+  padding: 15px;
+  /* border-radius: 10px; */
+  transition:0.5s;
+  /* margin-bottom: 49px; */
+  text-align: center;
+  height: 250px;
+  background-color: #f3feff;
+}
+.myspecial-sub label{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+    /* color:white; */
+    text-transform: capitalize;
+    /* transition:0.5s; */
+    font-family: serif;
+    
+    
+}
+.myspecial-sub p{
+  font-style: italic;
+  /* color:white; */
+
+}
+.myspecial-sub:hover{
+  background-color: #9d00ff;
+  cursor:pointer;
+  color:white;
+  border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.myspecial-sub:hover label{
+  color:white;
+}
+#Skills{
+  transition:0.5s;
+}
+#aboutlbl{
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+#abouttextlal{
+  font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+}
+.prog-span{
+  position: absolute;
+    top: 7px;
+    right: 18px;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+#html-prog,#css3-prog,#py-prog,#rb-prog,#jq-prog{
+  height: 7px;
+  margin-bottom: 17px;
+}
+.progress-bar.color-1{
+  background: #2c98f0;
+}
+.progress-bar.color-2{
+  background: #ec5453;
+}
+.progress-bar.color-3{
+  background: #f9bf3f;
+}
+.progress-bar.color-4{
+  background: #a84cb8;
+}
+.progress-bar.color-5{
+  background: #2fa499;
+}
+.progress-wrap h3{
+  font-size: 16px;
+    font-family: "Quicksand", Arial, sans-serif;
+    margin-bottom: 10px;
+    
+}
+.edu-lbl{
+  font-size: 21px;
+    font-family: "Quicksand", Arial, sans-serif;
+}
+.edu-li{
+  font-size: 15px;
+    color: #575757;
+}
+.edu-location{
+  font-size: 16px;
+    color: #575757;
+}
+.edu-back:hover{
+  background-color: #edfaff;
+  cursor:pointer;
+}
+.cont-info-lbl{
+  font-size: 28px;
+    margin-bottom: 27px;
+    font-family: "Quicksand", Arial, sans-serif;
+}
+.con-info p a{
+  color: #8500ff;
+  
+  text-decoration: none;
+}
+.con-info p a:hover{
+  color: black;
+  text-decoration: none;
+}
+.con-inp{
+    border: transparent;
+    background: #f2f3f7;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 400;
+    appearance: none;
+    width: 81%;
+    padding-left: 15px;
+}
+.con-inp-multi{
+  border: transparent;
+  background: #f2f3f7;
+  font-size: 16px;
+  font-weight: 400;
+  appearance: none;
+  width: 81%;
+  padding-left: 15px;
+}
+/* The button */
+#button-blue{
+	float: left;
+    width: 35%;
+    max-width: 500px;
+    /* border: white solid 4px; */
+    border: 2px solid rgb(0, 126, 255);
+    cursor: pointer;
+    background-color: #ffffff;
+    /* margin-top: -4px; */
+    color: black;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: .1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+
+/* Change text color & background opacity on hover*/
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+  color:white;
+  border: transparent;
+  
+}
+
+/* The white hover effect */
+.ease {
+	width: 0px;
+	height: 45px;
+	background-color: white;
+	-webkit-transition: .4s ease;
+	-moz-transition: .4s ease;
+	-o-transition: .4s ease;
+	-ms-transition: .4s ease;
+  transition: .4s ease;
+  border-radius: 5px;
+}
+
+/* Make visable when hover */
+.btn-container:hover .ease{
+	width: 35%;
+	max-width: 500px;
+	background-image: linear-gradient(to right, #0037ff , #ff00eb);
+  border: 0;
+  border: transparent;
+}
+.slide_right:hover {
+  box-shadow: inset 220px 0 0 0 #0037ff;
+  border: transparent;
+  border-radius: 5px;
+  color: white;
+}
+.join-di{
+  margin-bottom: 150px;
+}
