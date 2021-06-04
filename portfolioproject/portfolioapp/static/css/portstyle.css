@@ -5,7 +5,7 @@
     background: transparent;
     Color: White;
     width:100%;
-    height:94px;
+    /* height:94px; */
     z-index: 1000;
     /* max-width: 120%; */
     
@@ -26,11 +26,11 @@
   #TopNavBar ul li{
     display:inline-block;
     /* width:100px; */
-    margin: 17px 0px 0px 38px;
+    margin: 22px 0px 0px 40px;
     /* font-weight: 600; */
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 15px;
+    /* font-size: 15px; */
 
   }
 #main-logo{
@@ -93,7 +93,7 @@
   max-width: 100%;
   background-color: white;
 }
-.hireme{
+.hireme,.hireme-d{
   padding-left: 35px;
 }
 .hireme button{
@@ -109,6 +109,50 @@
   transition: .5s ease;
 }
 
+.Hire-me-btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #1a6bff;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 23px;
+    padding: 5px 0px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.Hire-me-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Hire-me-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.Hire-me-btn:hover span {
+  padding-right: 25px;
+}
+
+.Hire-me-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.Hire-me-btn:active,
+.Hire-me-btn:focus { 
+    outline: none;
+}
 .myspecial .lbl1{
     margin-left: 50px;
     font-size: 40px;
@@ -261,6 +305,7 @@
   appearance: none;
   width: 81%;
   padding-left: 15px;
+  padding-top: 10px;
 }
 /* The button */
 #button-blue{
@@ -325,4 +370,77 @@
 }
 .join-di{
   margin-bottom: 150px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#maindiv {
+  transition: margin-left .5s;
+  padding: 16px 0px;
+}
+.hidden-menu{
+  display: none;
+}
+.top-nv-logo{
+  display: flex;
+  font-size:35px;
+  cursor:pointer; 
+  color: black;
+  margin: 5px 5px;
+}
+.code-img{
+  text-align: center;
+  padding: 40px 0px;
+  display: block;
+}
+.code-img img{
+  width: 260px;
+  height: 250px;
+}
+@media screen and (max-height: 800px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 800px) {
+  #about,#skill,#edu,#contactme{
+    text-align: center;
+  }
+  .top-nav-list,.code-img{
+    display: none;
+  }
+  .hidden-menu{
+    display: block;
+  }
 }

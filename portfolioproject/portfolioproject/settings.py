@@ -122,5 +122,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT  = os.path.join(BASE_DIR, 'static')
 
 # managing media like show image on site
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+# MEDIA_URL = '/media/'

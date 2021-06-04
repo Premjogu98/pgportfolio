@@ -39,21 +39,34 @@
 <script> 
 $(document).ready(function(){
   $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > 80) {
-      $(".main-top").css("background" , "white");
-      $(".main-top").css("box-shadow" , "4px 12px 8px 0px #8080804f");
-      $(".main-top").css("border-bottom-right-radius" , "31px");
-        $(".main-logo").css("color" , "Blue");
-        $(".TopNavBar").css("transition" , "0.4s");
-	  }
-	  else{
-		  $(".main-top").css("background" , "transparent");
-          $(".main-top").css("transition" , "0.4s"); 
-          $(".main-logo").css("color" , "rgb(0, 126, 255)");
-          $(".main-top").css("box-shadow" , ""); 	
-	  }
-  })
+      var scroll = $(window).scrollTop();
+      if (scroll > 80) {
+        $(".main-top").css("background" , "white");
+        $(".main-top").css("box-shadow" , "4px 12px 8px 0px #8080804f");
+        // $(".main-top").css("border-bottom-right-radius" , "31px");
+          $(".main-logo").css("color" , "Blue");
+          $(".TopNavBar").css("transition" , "0.4s");
+      }
+      else{
+        $(".main-top").css("background" , "transparent");
+            $(".main-top").css("transition" , "0.4s"); 
+            $(".main-logo").css("color" , "Black");
+            $(".main-top").css("box-shadow" , ""); 	
+      }
+    })
+  // function myFunction(x) {
+  //   if (x.matches) { // If media query matches
+      
+  //   } 
+  //   else 
+  //   {
+      
+  //   }
+  // }
+
+  // var x = window.matchMedia("(max-width: 700px)")
+  // myFunction(x) // Call listener function at run time
+  // x.addListener(myFunction) // Attach listener function on state changes
 })
 </script>
 <script>
