@@ -1,18 +1,23 @@
-
+body{
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
 #TopNavBar{
     position:sticky;
     top:0;
-    background: transparent;
+    /* background: transparent; */
     Color: White;
     width:100%;
     /* height:94px; */
     z-index: 1000;
     /* max-width: 120%; */
+    background-image: linear-gradient(to right, #ffffff , #f26d4e);
     
 }
 .top-nav-list{
     text-align: center;
-    background-image: linear-gradient(to right, #0037ff , #ff00eb);
+    /* background-image: linear-gradient(to right, #0037ff , #ff00eb); */
     border-radius: 130px;
 }
  
@@ -21,7 +26,9 @@
     padding:0;
   }
   #TopNavBar ul a{
-    color:white;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 3px;
   }
   #TopNavBar ul li{
     display:inline-block;
@@ -54,19 +61,22 @@
 }
 .intro-1{
   font-weight: 100;
-  color:black;
+  color:white;
   padding-left: 35px;
+  letter-spacing: 3px;
 }
 .intro-name{
   font-weight: bolder;
-  color:black;
+  color:white;
   padding-left: 35px;
+  letter-spacing: 3px;
 }
 .typewriter {
   font-family: sans-serif;
-  color: black;
+  color: white;
   padding-left: 35px;
   display: block;
+  letter-spacing: 3px;
 }
 .typewriter-text {
   padding-right: 10px;
@@ -75,6 +85,7 @@
   /* text-transform: uppercase; */
   animation: cursor 1s ease-in-out infinite;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 @keyframes cursor {
   from { border-color: #ffe509; }
@@ -112,7 +123,7 @@
 .Hire-me-btn {
     display: inline-block;
     border-radius: 4px;
-    background-color: #1a6bff;
+    background-color: #f26d4e;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -179,7 +190,7 @@
   /* margin-bottom: 49px; */
   text-align: center;
   height: 250px;
-  background-color: #f3feff;
+  background-color: #f26d4e0d;
 }
 .myspecial-sub label{
     font-size: 25px;
@@ -198,11 +209,11 @@
 
 }
 .myspecial-sub:hover{
-  background-color: #9d00ff;
+  background-color: #f26d4e;
   cursor:pointer;
   color:white;
-  border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+  /* border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px; */
 }
 .myspecial-sub:hover label{
   color:white;
@@ -223,6 +234,7 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 1.8;
+    color: #f26d4e;
 }
 .prog-span{
   position: absolute;
@@ -279,7 +291,7 @@
     font-family: "Quicksand", Arial, sans-serif;
 }
 .con-info p a{
-  color: #8500ff;
+  color: #731600;
   
   text-decoration: none;
 }
@@ -378,17 +390,25 @@
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #000;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  color: white;
+  background-image: linear-gradient(to right, #5600ff , #ff00b1b3);
 }
-
-.sidenav a {
+.closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
   padding: 8px 8px 8px 32px;
+  font-size: 55px;
+}
+.sidenav a {
+  padding: 56px 20px 0px 20px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }
@@ -397,7 +417,7 @@
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.sidenav.closebtn{
   position: absolute;
   top: 0;
   right: 25px;
@@ -407,7 +427,7 @@
 
 #maindiv {
   transition: margin-left .5s;
-  padding: 16px 0px;
+  /* padding: 16px 0px; */
 }
 .hidden-menu{
   display: none;
@@ -429,8 +449,13 @@
   height: 250px;
 }
 @media screen and (max-height: 800px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {padding-top: 15px;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .sidenav a {
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -443,4 +468,32 @@
   .hidden-menu{
     display: block;
   }
+}
+#animated-title{
+  padding: 170px 0px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  /* border-radius: 5px; */
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+#animated-title:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
+  filter: blur(3px);
+  /* margin: -20px; */
+}
+.hidden-class{
+  background-image:linear-gradient(to right, #f26d4e, #ffffff);
+  box-shadow:4px 12px 8px 0px #8080804f;
+  color: white;
+  transition:0.4s;
 }

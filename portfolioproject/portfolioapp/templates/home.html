@@ -4,9 +4,10 @@
 
 {% block head %} 
 <style>
-  /* #maindiv{
+  #animated-title{
     background-image: url("{% static 'images/695931.jpg'%}");
-  } */
+  }
+
 </style>
 {% endblock %}
 
@@ -33,44 +34,46 @@
   </div>
 </div>
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="javascript:void(0)" class="closebtn" style="padding: 8px 8px 8px 32px; font-size: 55px;" onclick="closeNav()">&times;</a>
+  <a href="#home">Home</a>
+  <a href="#skill">Skills</a>
+  <a href="#about">About</a>
+  <a href="#edu">Education</a>
+  <a href="#contactme">Contact</a>
 </div>
 
 
 <div id="maindiv">
   <div id="animated-title">
-    <div class="container align-items-center" id="home" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
-      <div class="row">
-        <div class="col-sm-7">
-          <div style="margin-top: 60px; margin-bottom: 60px;">
-            <h3 class="intro-1">Hello, my name is </h3>
-            <h1 class="intro-name">Prem Somnath Jogu</h1>
-            <label class='typewriter'>I'm a <span class='typewriter-text' data-text='["Web Designer . . .", "Python Devloper . . .", "Python Web Scraper . . .","Django Devloper . . .","Ruby Devloper . . ."]'></span></label>
-            <!-- <div class="hireme"><button class="slide_right">Hire me</button></div> -->
-            <div class="hireme-d"><button class="Hire-me-btn" style="vertical-align:middle"><span>Hire me </span></button></div>
+    <div class="glass-div">
+      <div class="container align-items-center" id="home" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+        <div class="row">
+          <div class="col-sm-7">
+            <div style="margin-top: 60px; margin-bottom: 60px;">
+              <h3 class="intro-1">Hello, my name is </h3>
+              <h1 class="intro-name">Prem Somnath Jogu</h1>
+              <label class='typewriter'>I'm a <span class='typewriter-text' data-text='["Web Designer . . .", "Python Devloper . . .", "Python Web Scraper . . .","Django Devloper . . .","Ruby Devloper . . ."]'></span></label>
+              <!-- <div class="hireme"><button class="slide_right">Hire me</button></div> -->
+              <div class="hireme-d"><button class="Hire-me-btn" style="vertical-align:middle"><span>Hire me </span></button></div>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-5">
-          <div class="code-img">
-            <img src="{% static 'images/code1.png'%}" alt="coder-img">
+          <div class="col-sm-5">
+            <div class="code-img">
+              <img src="{% static 'images/code1.png'%}" alt="coder-img">
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
   <div class="join-di" id="about">
     <div class="container" >
-      <div style="margin: 40px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <div style="margin: 40px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <label id="aboutlbl">About ME</label><br>
         <label id="abouttextlal">WHO AM I ?</label>
       </div>
-      <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
           <div class="myspecial-sub">          
             <img src="https://img.icons8.com/nolan/96/web-design.png"/>
@@ -113,11 +116,11 @@
 
   <div class="join-di" id="skill">
     <div class="container">
-      <div style="margin: 40px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <div style="margin: 40px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <label id="aboutlbl">MY SPECIALTY</label><br>
         <label id="abouttextlal">MY SKILLS</label>
       </div>
-      <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <div class="col-12 col-md-6">
           <div class="progress-wrap">
             <h3>HTML5</h3>
@@ -174,11 +177,11 @@
 
   <div class="join-di" id="edu">
     <div class="container" >
-      <div style="margin: 40px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <div style="margin: 40px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <label id="aboutlbl">EDUCATION</label><br>
         <label id="abouttextlal">EDUCATION</label>
       </div>
-      <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <div class="col-6 col-md-6 edu-back">
           <label class="edu-lbl">High School Secondary Education And College ( 12<sup>th</sup> )</label><br>
           <i class="fa fa-map-marker edu-li"></i> <label class="edu-location">Nutan Vidyalaya & JR College, Nalasopara</label><br>
@@ -195,11 +198,11 @@
 
   <div class="join-di" id="contactme">
     <div class="container">
-      <div style="margin: 40px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <div style="margin: 40px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <label id="aboutlbl">GET IN TOUCH</label><br>
         <label id="abouttextlal">CONTACT ME</label>
       </div>
-      <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+      <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <div class="col-12 col-md-6">
           <div>
             <p><i class="fa fa-map-marker edu-li"></i>&nbsp;&nbsp;&nbsp;Nagindas Pada, Nallasopara (East), Mumbai, Maharashtra, India - 401209</p>
@@ -283,7 +286,8 @@
 <script>
   function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
-    // document.getElementById("mySidenav").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.marginLeft = "0px";
+    document.getElementById("mySidenav").style.textAlign = "center";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
   
